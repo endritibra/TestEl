@@ -1,0 +1,13 @@
+---
+layout: 'base'
+title: "Blog"
+---
+
+<div class="blogSection">
+    <h1 class="blogSectionTitle">Recent Articles</h1>
+    <ul role="list" class="articlesList">
+        {% for post in collections.posts %}
+        {% include "post-list-item.njk" %}
+        {% endfor %}
+        </ul>
+        </div>
