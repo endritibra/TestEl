@@ -139,5 +139,14 @@ color:black;
     padding:0 6rem;
   
 }
-
+.blogSection{
+    margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.blogSectionTitle{
+    width: 100%;
+}
 }
