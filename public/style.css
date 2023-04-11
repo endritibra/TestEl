@@ -122,4 +122,15 @@ color:black;
     flex-direction: column;
 
 }
+.portf * {
+    padding: 0 0.5rem;
+  }
+  .portf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--darkgreen);
+    font-size: 0.7rem;
+  }
 }
