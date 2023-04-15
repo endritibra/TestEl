@@ -1,6 +1,10 @@
 ---
 layout: 'base'
 title: "Blog"
+pagination:
+    data: collections.post
+    size: 2
+    alias: posts
 ---
 
 <div class="blogSection">
@@ -10,4 +14,14 @@ title: "Blog"
         {% include "post-list-item.njk" %}
         {% endfor %}
         </ul>
+
+
+        <h2>pagination</h2>
+        <ol>
+            {% for post in collections.post %}
+            <li><a href="{{ post.url }}">{{post.data.title}} </a></li>
+            {% endfor %}
+
+        </ol>
+
         </div>
